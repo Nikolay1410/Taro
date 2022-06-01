@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Taro</string>
+    <string name="your_question">Введите ваш вопрос...</string>
+    <string name="buttonAskQuestion">Задать вопрос</string>
+    <string name="textViewQuestion">Задайте ваш вопрос</string>
+    <string name="choose_cards">Выберете карты</string>
+    <string name="shuffle">Перетасовать</string>
+    <string name="сard_interpretation">Толкование вашых карт</string>
+    <string name="reset">Сбросить</string>
+</resources>
