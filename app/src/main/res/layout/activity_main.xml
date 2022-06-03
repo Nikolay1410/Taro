@@ -20,7 +20,7 @@
         android:layout_height="0dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonQuestion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -56,8 +56,9 @@
         android:id="@+id/buttonQuestion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/buttonAskQuestion"
         android:layout_margin="8dp"
+        android:backgroundTint="#996A3F12"
+        android:text="@string/buttonAskQuestion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTexQuestion" />
@@ -77,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonQuestion" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewTitle2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
@@ -86,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewСhooseСards"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion"
         app:srcCompat="@drawable/caled" />
 
     <Button
@@ -95,6 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="@string/reset"
+        android:backgroundTint="#996A3F12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewTitle" />
@@ -133,6 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="@string/shuffle"
+        android:backgroundTint="#996A3F12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
