@@ -7,4 +7,6 @@
     <string name="shuffle">Перетасовать</string>
     <string name="сard_interpretation">Толкование вашых карт</string>
     <string name="reset">Сбросить</string>
+    <string name="your_cvestions">Введите ваш вопрос</string>
+    <string name="find_answer">Узнать ответ</string>
 </resources>
