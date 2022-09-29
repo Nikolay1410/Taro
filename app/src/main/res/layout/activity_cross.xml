@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cross">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/preluchshie"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/imageViewTitle2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/caled"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/imageViewCrossCard2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTitle2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCrossCard3"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:srcCompat="@drawable/revers"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/imageViewCrossCard1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCrossCard3"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTitle2"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:srcCompat="@drawable/revers"
+        android:contentDescription="@string/image" />
+
+    <ImageView
+        android:id="@+id/imageViewCrossCard4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCrossResult"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCrossCard2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCrossCard1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrossCard4"
+        app:srcCompat="@drawable/revers"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/textViewСhooseСards"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_cards"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCrossMyCards"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewСhooseСards" />
+
+    <TextView
+        android:id="@+id/textViewNumberOfCards"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/your_choice"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/buttonCrossResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#996A3F12"
+        android:text="@string/find_answer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCrossCard3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCrossCard2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCrossCard1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCrossCard3"
+        app:srcCompat="@drawable/revers"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:id="@+id/textViewCrossCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewCrossCard1"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewCrossCard1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCrossCard1" />
+
+    <TextView
+        android:id="@+id/textViewCrossCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewCrossCard2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewCrossCard2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCrossCard2" />
+
+    <TextView
+        android:id="@+id/textViewCrossCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewCrossCard3"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCrossCard3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumberOfCards" />
+
+    <TextView
+        android:id="@+id/textViewCrossCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewCrossCard4"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCrossCard4"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCrossCard3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
